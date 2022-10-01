@@ -4,7 +4,110 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9cc2bf2-7bc1-4083-8081-27971d76eaad" name="Changes" comment="" />
+    <list default="true" id="c9cc2bf2-7bc1-4083-8081-27971d76eaad" name="Changes" comment="added login/logout, rest apis, routes, and basic ui.">
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2022-08-13T163150.400.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2022-08-13T163213.400.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/2022-08-13T173934.500.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_2_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_data_5_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/domain/Alliance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/domain/Battle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/domain/security/Authority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/domain/security/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/domain/security/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/exceptions/UserAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/repositories/AllianceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/repositories/BattleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/repositories/security/AuthorityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/repositories/security/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/repositories/security/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/security/JpaUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/security/ProjectPasswordEncoderFactories.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/services/AllianceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/services/AllianceServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/services/PlayerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/services/PlayerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/web/controllers/api/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/web/controllers/api/PublicController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/web/mappers/AllianceBasicDataMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/web/mappers/PlayerBasicDataMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/web/mappers/UserEditMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/web/mappers/UserViewMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/web/model/AllianceBasicData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/web/model/AllianceBasicDataList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/web/model/AllianceDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/web/model/AuthRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/web/model/CreateUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/web/model/PlayerBasicData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/web/model/PlayerBasicDataList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/web/model/UpdateUserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/web/model/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/web/model/pagination/ObjectPagedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/rsa.private.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/rsa.public.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Alerts/AlertMessage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Forms/LoginForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Forms/LogoutForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Forms/RegisterForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/User/User.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/User/Users.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/layout/Layout.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/layout/MainNavigation.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/layout/SearchBar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ui/Card.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ui/List.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ui/Spinner.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/hooks/use-http.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/images/home-image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Home.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/LoginPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/RegisterPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/UserPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/scripts/api-endpoints.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/services/Api/Auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/services/Api/PlayersDetailInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/services/Api/PublicInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/reducers/alliance-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/reducers/auth-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/reducers/http-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/reducers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/reducers/players-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/bootstrap/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/bootstrap/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/domain/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/domain/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/repositories/PlayerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/repositories/PlayerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/service/PlayerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/service/PlayerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/web/controllers/api/RestPlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/web/controllers/api/RestPlayerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/web/mappers/PlayerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/web/mappers/PlayerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/web/model/BaseItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/web/model/BaseItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/web/model/PlayerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/rankingsystem/backend/web/model/PlayerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +116,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="com.haulmont.jpb.JpaEntity" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -31,11 +135,14 @@
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
+  </component>
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="docker-desktop" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -59,20 +166,25 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "C:/Users/jeffe/OneDrive/Desktop/Projects/ranking-system/backend",
+    "last_opened_file_path": "C:/Users/jeffe/Desktop/SpringProjects/recipe-project",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "spring.configuration.checksum": "b43fdd98b1fd705ae4c3a10cf25aad8a"
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "b43fdd98b1fd705ae4c3a10cf25aad8a",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2021.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.rankingsystem.backend.services" />
+      <recent name="com.rankingsystem.backend.web.model" />
+      <recent name="com.rankingsystem.backend.web.mappers" />
       <recent name="com.rankingsystem.backend.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -80,15 +192,28 @@
       <recent name="C:\Users\jeffe\OneDrive\Desktop\Projects\ranking-system\frontend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\jeffe\OneDrive\Desktop\Projects\ranking-system" />
-      <recent name="C:\Users\jeffe\OneDrive\Desktop\Projects\ranking-system\backend\src\main\java\com\rankingsystem\backend" />
+      <recent name="C:\Users\jeffe\Desktop\Projects\ranking-system\frontend\src\images" />
+      <recent name="C:\Users\jeffe\Desktop\Projects\ranking-system\frontend\src\components\ui" />
+      <recent name="C:\Users\jeffe\OneDrive\Desktop\Projects\ranking-system\frontend\src\services\Api" />
+      <recent name="C:\Users\jeffe\OneDrive\Desktop\Projects\ranking-system\frontend\src\components\User" />
+      <recent name="C:\Users\jeffe\OneDrive\Desktop\Projects\ranking-system\backend" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BackendApplication (1)">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
-    <configuration name="BackendApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="App.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/frontend/src/App.js" working-dir="$PROJECT_DIR$/frontend/src">
+      <method v="2" />
+    </configuration>
+    <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="backend" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.rankingsystem.backend.BackendApplication" />
       <extension name="coverage">
@@ -101,24 +226,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <option name="ACTIVE_PROFILES" />
-      <option name="ALTERNATIVE_JRE_PATH" value="11" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <module name="ranking-system" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ranking_system.backend.BackendApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.Debug Application" />
+      <item itemvalue="Node.js.App.js" />
+      <item itemvalue="npm.start" />
       <item itemvalue="Spring Boot.BackendApplication" />
-      <item itemvalue="Spring Boot.BackendApplication (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.BackendApplication (1)" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="Spring Boot.BackendApplication" />
+        <item itemvalue="Node.js.App.js" />
       </list>
     </recent_temporary>
   </component>
@@ -132,7 +260,40 @@
       <updated>1659418186665</updated>
       <workItem from="1659418187990" duration="10566000" />
       <workItem from="1659428801451" duration="497000" />
-      <workItem from="1659429302183" duration="2446000" />
+      <workItem from="1659429302183" duration="2763000" />
+      <workItem from="1659459809386" duration="20000" />
+      <workItem from="1659664852238" duration="2218000" />
+      <workItem from="1659667192197" duration="17963000" />
+      <workItem from="1659736869026" duration="443000" />
+      <workItem from="1659778891482" duration="206000" />
+      <workItem from="1660079992115" duration="60000" />
+      <workItem from="1660257516257" duration="19914000" />
+      <workItem from="1660425273563" duration="15165000" />
+      <workItem from="1660619182087" duration="324000" />
+      <workItem from="1660619519492" duration="13330000" />
+      <workItem from="1660633027592" duration="42000" />
+      <workItem from="1661279296107" duration="13680000" />
+      <workItem from="1661374224211" duration="6601000" />
+      <workItem from="1661392407057" duration="10654000" />
+      <workItem from="1661403094608" duration="39000" />
+      <workItem from="1661544894952" duration="7701000" />
+      <workItem from="1661568434045" duration="11889000" />
+      <workItem from="1661806872833" duration="7840000" />
+      <workItem from="1661977629331" duration="748000" />
+      <workItem from="1661983503591" duration="20058000" />
+      <workItem from="1662417553697" duration="1222000" />
+      <workItem from="1662418778861" duration="8165000" />
+      <workItem from="1662437297185" duration="1260000" />
+      <workItem from="1662487846379" duration="184000" />
+      <workItem from="1663016481630" duration="422000" />
+      <workItem from="1663092781739" duration="196000" />
+      <workItem from="1663182004402" duration="9449000" />
+      <workItem from="1663430181415" duration="747000" />
+      <workItem from="1663564392018" duration="7452000" />
+      <workItem from="1663869626933" duration="60000" />
+      <workItem from="1664214350034" duration="3740000" />
+      <workItem from="1664299262178" duration="124000" />
+      <workItem from="1664591011046" duration="1567000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit + player model &amp; rest controller setup.">
       <created>1659428103821</created>
@@ -171,7 +332,22 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/backend" />
+    </ignored-roots>
     <MESSAGE value="initial commit + player model &amp; rest controller setup." />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit + player model &amp; rest controller setup." />
+    <MESSAGE value="added login/logout, rest apis, routes, and basic ui." />
+    <option name="LAST_COMMIT_MESSAGE" value="added login/logout, rest apis, routes, and basic ui." />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.springframework.security.crypto.password.DelegatingPasswordEncoder" memberName="idPrefix" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

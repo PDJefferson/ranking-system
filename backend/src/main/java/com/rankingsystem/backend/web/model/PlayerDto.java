@@ -8,27 +8,24 @@ import java.util.UUID;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 public class PlayerDto extends BaseItem {
-    private String nickname;
-    private int raids;
-    private int wins;
-    private int losses;
-    private int draws;
-    private int points;
-    private String rank;
+    private String name;
+    private int resource;
+    private int power;
+    private int donations;
+    private int kills;
+    private int bestContributions;
 
-    private String clan;
+    private String allianceTag;
 
     @Builder
-    public PlayerDto(UUID id, String nickname, int raids, int wins, int losses,
-                  int draws, int points, String rank, String clan) {
+    public PlayerDto(UUID id, String name, int resource, int power, int donations, int kills, int bestContributions, String allianceTag) {
         super(id);
-        this.nickname = nickname;
-        this.raids = raids;
-        this.wins = wins;
-        this.losses = losses;
-        this.draws = draws;
-        this.points = points;
-        this.rank = rank;
-        this.clan = clan;
+        this.name = name;
+        this.resource = resource;
+        this.power = power;
+        this.donations = donations;
+        this.kills = kills;
+        this.bestContributions = bestContributions;
+        this.allianceTag = allianceTag;
     }
 }

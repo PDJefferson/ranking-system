@@ -1,18 +1,30 @@
 package com.rankingsystem.backend.web.mappers;
 
+import com.rankingsystem.backend.domain.Alliance;
 import com.rankingsystem.backend.domain.Player;
+import com.rankingsystem.backend.web.model.AllianceDto;
 import com.rankingsystem.backend.web.model.PlayerDto;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
-import org.mapstruct.ReportingPolicy;
-import org.mapstruct.factory.Mappers;
+import org.mapstruct.Named;
 
-@Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.WARN)
-public interface PlayerMapper {
-    PlayerMapper INSTANCE = Mappers.getMapper(PlayerMapper.class);
+import java.util.HashSet;
 
-    @Mapping(source = "id", target = "id")
-    PlayerDto playerToPlayerDto(Player player);
 
-    Player playerDtoToPlayer(PlayerDto playerDto);
+@Mapper(componentModel = "spring")
+public abstract class PlayerMapper {
+
+    @Mapping(source = "player", target = "allianceTag", qualifiedByName = "setAllianceTag")
+    public abstract PlayerDto playerToPlayerDto(Player player);
+
+    public abstract Player playerDtoToPlayer(PlayerDto playerDto);
+
+    @Named("setAllianceTag")
+    protected String setAllianceTag(Player player) {
+        if(player.getAlliance() == null){
+            return "No clan";
+        }
+        return player.getAlliance().getTag();
+    }
+
 }
